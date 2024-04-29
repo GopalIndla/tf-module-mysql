@@ -16,7 +16,7 @@ resource "aws_db_instance" "mysql" {
 # Provisons Parameter Groups for RDS
 resource "aws_db_parameter_group" "mysql" {
   name                = "rds-pg"
-  family              = var.MYSQL_ENGINE_VERSION
+  family              = var.MYSQL_ENGINE_FAMILY
 }
 
 # Provisions Subnet Group
